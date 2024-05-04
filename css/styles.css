@@ -1,0 +1,54 @@
+* {
+  box-sizing: border-box;
+}
+
+/* Reset styles */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+p:last-child {
+  margin-bottom: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.gallery {
+  margin: 0 auto;
+  width: 1440px;
+  height: 696px;
+  padding: 24px 156px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+  background-color: #ffffff;
+  position: relative;
+}
+
+.gallery-image {
+  object-fit: cover;
+  width: 360px;
+  height: 200px;
+  transition: transform 0.3s ease;
+}
+.gallery-image:hover,
+.gallery-image:focus {
+  transform: scale(1.04);
+}
